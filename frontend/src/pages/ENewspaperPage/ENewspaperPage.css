@@ -1,0 +1,72 @@
+.enewspaper-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.enewspaper-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.enewspaper-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feed-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feed-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.feed-error {
+  color: #dc3545;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: #f8d7da;
+  border-radius: 4px;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #dc3545;
+  background: #f8d7da;
+  border-radius: 4px;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .enewspaper-page {
+    padding: 1rem;
+  }
+  
+  .articles-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
