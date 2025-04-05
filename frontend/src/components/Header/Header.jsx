@@ -88,7 +88,10 @@ export default function Header() {
             E-NewsPapers
           </NavLink>
         </div>
-
+        {/* <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="puja-patil-3a002134a" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/puja-patil-3a002134a?trk=profile-badge">Puja Patil</a></div> */}
+        <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="puja-patil-3a002134a" data-version="v1">
+      <a className="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/puja-patil-3a002134a?trk=profile-badge">Puja Patil</a>
+    </div>
         {/* Right Section */}
         <div className="flex items-center space-x-4">
           {isAuthenticated ? (
@@ -153,6 +156,7 @@ export default function Header() {
                   {category.charAt(0).toUpperCase() + category.slice(1)}
                 </NavLink>
               ))}
+              
 
               {isAuthenticated ? (
                 <button
@@ -188,3 +192,8 @@ export default function Header() {
     </header>
   );
 }
+
+
+
+
+              
